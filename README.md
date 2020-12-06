@@ -1,18 +1,18 @@
-Python Data Types
+# Python Data Types
 
 Data Types vary in characteristics, features and restrictions and therefor determine their usefulness in certain cases. They can be categoriesed as ...
 
-Boolean
+### Boolean
 The most basic data type in python is probably 'bool'. It stands for a boolean value of either 'True' or 'False'.
 The output from a test which checks, whether an expression ist true or false can be 0 or 1, though.
 
-Numeric
+### Numeric
 Numeric data types are integer (int), floating point (float) or complex. The type 'complex' is less interesting in our context here and will not be further discussed.
 Integers are whole numbers, either positive (+13) or negative (-67). 
 'float' can also hold positive and negative values. But they do not need to be whole numbers and always contain a decimal point. 7 : 2 would produce the float value of 3.5.
 The types int and float are interchangeable. And int can be turned into a float and vice versa. When changing a value of float into an int, the decimal part will be omitted: 54,7 (float) will become 54 (int). 
 
-Sequences
+### Sequences
 Whenever ordering of elements is crucial, sequences are very useful. Their elements are indexed and can be accessed in the order they were created. Indexing starts with 0 (zero). The first elemment in a sequences would be [0]. Negative indexing is also possible. [-2] would address the second last element in a sequence.
 
     * strings (str)
@@ -31,7 +31,7 @@ Whenever ordering of elements is crucial, sequences are very useful. Their eleme
 There are more types of sequences in python which are not interesting for us as of now.
 
 
-Containers
+### Containers
 Unlike sequences, containers are not indexed and therefor do not know about any ordering of their elements.
 
     * sets (set)
@@ -43,6 +43,6 @@ Unlike sequences, containers are not indexed and therefor do not know about any 
     * dictionaries (dict)
       Dictionaries are special since the do hold single values as items like the other types but pairs as key : value. As mentioned above, tuples can be used to genarate keys. Curly brackets are also used here for declaration. Indeed, ddd = {} creates an empty dictionary, not an empty set.
       But dictinaries hold key : value pairs and can therefor not be confused with sets. eee = { 'Name':42, 1.9:'no' }
-      
+
 
 
