@@ -1,2 +1,2 @@
 # antelope
-Just for fun.
+Python Data Types
