@@ -59,6 +59,51 @@ Unlike sequences, containers are not indexed and therefor do not know about any 
       As mentioned above, tuples can be used to genarate keys. Curly brackets are also used here for declaration. 
       Indeed, ddd = {} creates an empty dictionary, not an empty set.
       But dictinaries hold key : value pairs and can therefor not be confused with sets. eee = { 'Name':42, 1.9:'no' }
+      We cannot use an index here to access a certain value (like we would in a list) but we can use its corresponding key. 
 
 
+# Decision Making
+In a program or script sometimes we want to execute code only when certain conditions are met. 
+### If-Statement
+if is followed by an expression. Relational operators are used to build up such an expression. (==, > and others).
+The line is terminated by a colon (:).
+Whenever an expression is True, the code beginning in the following line is executed. This line has to be indented.
+Usually by 4 spaces. Should more code be executed, it would follow on the next lines which then indented by the same degree.
+Nothing will be executed should the expression be False.
+
+if a == 5:
+    print("Value of Variable a is 5.")
+
+#### If-else-Statement
+But we can force one of two commands to be executed depending on the truthiness of the expression.
+Indentation determines the code block.
+
+if a == 5:
+    print("Value of variable a is 5.")
+else:
+    print("Value of variable a is not 5.")
+
+
+#### Elif
+It is possible to check more than one condition using elif. It can be used several times between if and else.
+
+if a == 5:
+    print("Value of variable a is 5.")
+elif a == 3:
+    print("Value of variable a is 3.")
+elif a == 2:
+    print("Value of variable a is 2.")
+else:
+    print("Value of variable a is neither 5, 3 nor 2.")
+
+
+#### Nesting
+If-statements can also be combined. You can let another test follow should an expression be True.
+
+if a < 7:
+    if a > 5:
+        print("a is 6.")
+    print("a is less than 7.")
+else:
+    print("a is greater than 7.")
 
