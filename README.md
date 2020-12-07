@@ -77,16 +77,16 @@ if a == 5:
 #### If-else-Statement
 But we can force one of two commands to be executed depending on the truthiness of the expression.
 Indentation determines the code block.
-
+```
 if a == 5:
     print("Value of variable a is 5.")
 else:
     print("Value of variable a is not 5.")
-
+```
 
 #### Elif
 It is possible to check more than one condition using elif. It can be used several times between if and else.
-
+```
 if a == 5:
     print("Value of variable a is 5.")
 elif a == 3:
@@ -95,15 +95,15 @@ elif a == 2:
     print("Value of variable a is 2.")
 else:
     print("Value of variable a is neither 5, 3 nor 2.")
-
+```
 
 #### Nesting
 If-statements can also be combined. You can let another test follow should an expression be True.
-
+```
 if a < 7:
     if a > 5:
         print("a is 6.")
     print("a is less than 7.")
 else:
     print("a is greater than 7.")
-
+```
