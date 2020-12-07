@@ -70,10 +70,10 @@ The line is terminated by a colon (:).
 Whenever an expression is True, the code beginning in the following line is executed. This line has to be indented.
 Usually by 4 spaces. Should more code be executed, it would follow on the next lines which then indented by the same degree.
 Nothing will be executed should the expression be False.
-
+```
 if a == 5:
     print("Value of Variable a is 5.")
-
+```
 #### If-else-Statement
 But we can force one of two commands to be executed depending on the truthiness of the expression.
 Indentation determines the code block.
