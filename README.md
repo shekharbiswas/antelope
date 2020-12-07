@@ -107,3 +107,11 @@ if a < 7:
 else:
     print("a is greater than 7.")
 ```
+# Loops
+To automate the execution of several statements loops are used. There are two different types.
+### For-Loop
+To iterate over a sequence we would use a for loop.
+```
+for i in {2,3,3,4}:
+    print(i)
+```
