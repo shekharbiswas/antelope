@@ -29,6 +29,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostRegressor
 from scipy import stats
 import pickle
+
 df = pd.read_csv('hour.csv')
 
 ## preprocess
@@ -38,7 +39,7 @@ df.rename(columns={'instant':'rec_id',
 'workingday':'is_workingday',
 'weathersit':'weather_condition',
 'hum':'humidity',
-'atemp':'felt_temperature'
+'atemp':'felt_temperature',
 'mnth':'month',
 'cnt':'total_count',
 'hr':'hour',
