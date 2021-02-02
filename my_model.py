@@ -30,29 +30,29 @@ from sklearn.ensemble import AdaBoostRegressor
 from scipy import stats
 import pickle
 
-df = pd.read_csv('hour.csv')
+df = pd.read_csv('hdf_denorm.csv')
 
 ## preprocess
-df.rename(columns={'instant':'rec_id',
-'dteday':'datetime',
-'holiday':'is_holiday',
-'workingday':'is_workingday',
-'weathersit':'weather_condition',
-'hum':'humidity',
-'atemp':'felt_temperature',
-'mnth':'month',
-'cnt':'total_count',
-'hr':'hour',
-'yr':'year'},inplace=True)
+#df.rename(columns={'instant':'rec_id',
+#'dteday':'datetime',
+#'holiday':'is_holiday',
+#'workingday':'is_workingday',
+#'weathersit':'weather_condition',
+#'hum':'humidity',
+#'atemp':'felt_temperature',
+#'mnth':'month',
+#'cnt':'total_count',
+#'hr':'hour',
+#'yr':'year'},inplace=True)
 
-df = df[['hour','is_holiday', 'weekday','felt_temperature','total_count']]
-df.is_holiday = df.is_holiday.astype('category')
-df.weekday = df.weekday.astype('category')
+df = df[['hour','is_holiday', 'weekday','felt_temperature_actual','humidity_actual','users_total']]
+#df.is_holiday = df.is_holiday.astype('category')
+#df.weekday = df.weekday.astype('category')
 df = pd.get_dummies(df)
 
 ## modelling
-x = df.drop(columns = ['total_count'])
-y = df['total_count']
+x = df.drop(columns = ['users_total'])
+y = df['users_total']
 
 ada = AdaBoostRegressor()
 ada.fit(x,y)
