@@ -4,15 +4,12 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-
 model = pickle.load(open('my_model.pkl', 'rb'))
 
 day_dict = {'Fri':[1,0,0,0,0,0,0], 'Mon':[0,1,0,0,0,0,0],
             'Sat': [0,0,1,0,0,0,0], 'Sun':[0,0,0,1,0,0,0],
             'Thu':[0,0,0,0,1,0,0], 'Tue':[0,0,0,0,0,1,0],
             'Wed': [0,0,0,0,0,0,1]}
-
-# cols = ['hour', 'is_holiday', 'day_of_week']
 
 @app.route('/')
 def home():
@@ -21,25 +18,6 @@ def home():
 @app.route('/predict',methods=['POST','GET'])
 def predict():
     item = [x for x in request.form.values()]
-
-    ## postman begin
-    #hour = request.args.get('hour')
-    #is_holiday = request.args.get('is_holiday')
-    #day_of_week = request.args.get('day_of_week')
-
-    #data = []
-
-    #data.append(hour)
-    #if is_holiday == 'Yes':
-    #    data.extend([0,1])
-    #else:
-    #    data.extend([1,0])
-    #
-    #data.extend(day_dict[day_of_week])
-
-    ### postman end
-
-
 
     data = []
 
