@@ -12,7 +12,7 @@ conda install -c conda-forge seaborn
 conda install -c conda-forge scikit-learn
 
 
-You can test it with the following notdebook:
+You can test it with the following notdebook (get the .csv fie here https://github.com/facebook/prophet/blob/master/examples/example_wp_log_peyton_manning.csv):
 
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly, plot_components_plotly
