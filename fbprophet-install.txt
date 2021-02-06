@@ -1,0 +1,12 @@
+I did the following on a fresh installation of Anaconda on Windows 10.
+Open the Anaconda Powrshell Prompt wit "Administrator" privileges.
+
+conda install m2w64-gcc
+conda install -c conda-forge fbprophet
+conda remove pystan fbprophet
+conda install -c conda-forge pystan fbprophet
+conda install -c plotly plotly
+conda remove ipywidgets
+conda install -c conda-forge ipywidgets
+conda install -c conda-forge seaborn
+conda install -c conda-forge scikit-learn
