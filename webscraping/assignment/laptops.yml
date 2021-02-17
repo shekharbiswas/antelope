@@ -1,0 +1,90 @@
+name:
+    css: '#productTitle'
+    type: Text
+
+laptop_about:
+    css: '#feature-bullets'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+laptop_summary:
+    css: '#productDescription p'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+laptop_tech_spec:
+    css: '.a-expander-inline-container:nth-child(1) .a-section-expander-inner'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+
+laptop_tech_spec_other:
+    css: '.a-expander-inline-container+ .a-expander-inline-container .a-section-expander-inner'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+
+
+laptop_addl_info:
+    css: '#productDetails_db_sections'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+
+seller:
+    css: '#tabular-buybox-truncate-1 .a-truncate-cut'
+    type: Text
+
+seller_link:
+    css: '#tabular-buybox-truncate-1 .a-truncate-cut'
+    type: Link
+    
+ships_from:
+    css: '#tabular-buybox-truncate-0 .a-truncate-cut'
+    type: Text
+
+freq_bought:
+    css: '#sims-fbt'
+    type: Text
+
+freq_bought_link:
+    css: '#sims-fbt'
+    type: Link
+
+link_to_all_reviews:
+    css: '#cr-pagination-footer-0 .a-text-bold'
+    type: Link
