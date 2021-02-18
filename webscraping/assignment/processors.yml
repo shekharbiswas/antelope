@@ -2,6 +2,11 @@ name:
     css: '#productTitle'
     type: Text
 
+About:
+    css: '#feature-bullets .a-text-bold' or '#feature-bullets .a-list-item'
+    type: Text
+ 
+
 product_about:
     css: '#feature-bullets'
     multiple: true
