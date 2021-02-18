@@ -1,0 +1,91 @@
+name:
+    css: '#productTitle'
+    type: Text
+
+product_about:
+    css: '#feature-bullets'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_summary:
+    css: '.desktop'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_tech_spec:
+    css: 'h2+ span'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_tech_spec_other:
+    css: '.a-section-expander-inner'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_addl_info:
+    css: '#productDetails_db_sections'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+seller:
+    css: '#sellerProfileTriggerId'
+    type: Text
+
+seller_link:
+    css: '#sellerProfileTriggerId'
+    type: Link
+
+freq_bought:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Text
+
+freq_bought_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Link
+
+related_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Link
+
+related_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Text
+
+link_to_all_reviews:
+    css: '#cr-pagination-footer-0 .a-text-bold'
+    type: Link

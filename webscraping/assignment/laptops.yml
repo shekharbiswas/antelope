@@ -2,7 +2,7 @@ name:
     css: '#productTitle'
     type: Text
 
-laptop_about:
+product_about:
     css: '#feature-bullets'
     multiple: true
     type: Text
@@ -13,7 +13,8 @@ laptop_about:
         value:
             css: td
             type: Text
-laptop_summary:
+
+product_summary:
     css: '#productDescription p'
     multiple: true
     type: Text
@@ -25,7 +26,7 @@ laptop_summary:
             css: td
             type: Text
 
-laptop_tech_spec:
+product_tech_spec:
     css: '.a-expander-inline-container:nth-child(1) .a-section-expander-inner'
     multiple: true
     type: Text
@@ -37,8 +38,7 @@ laptop_tech_spec:
             css: td
             type: Text
 
-
-laptop_tech_spec_other:
+product_tech_spec_other:
     css: '.a-expander-inline-container+ .a-expander-inline-container .a-section-expander-inner'
     multiple: true
     type: Text
@@ -50,9 +50,7 @@ laptop_tech_spec_other:
             css: td
             type: Text
 
-
-
-laptop_addl_info:
+product_addl_info:
     css: '#productDetails_db_sections'
     multiple: true
     type: Text
@@ -64,26 +62,29 @@ laptop_addl_info:
             css: td
             type: Text
 
-
 seller:
-    css: '#tabular-buybox-truncate-1 .a-truncate-cut'
+    css: '#sellerProfileTriggerId'
     type: Text
 
 seller_link:
-    css: '#tabular-buybox-truncate-1 .a-truncate-cut'
+    css: '#sellerProfileTriggerId'
     type: Link
-    
-ships_from:
-    css: '#tabular-buybox-truncate-0 .a-truncate-cut'
-    type: Text
 
 freq_bought:
-    css: '#sims-fbt'
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
     type: Text
 
 freq_bought_link:
-    css: '#sims-fbt'
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
     type: Link
+
+related_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Link
+
+related_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Text
 
 link_to_all_reviews:
     css: '#cr-pagination-footer-0 .a-text-bold'
